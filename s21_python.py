@@ -12,3 +12,7 @@ def plot_x_by_class_y(*, table, x_column, y_column):
 
   pd.crosstab(table[x_column], table[y_column]).plot(kind='bar', figsize=(15,8), grid=True, logy=True)
   return None
+
+def doing_math(*, x, y, z):
+  answer = x+y*z
+  return answer
